@@ -1,0 +1,461 @@
+body{
+  background:url(bg4.jpg);
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.photo{
+  width: 10%;
+  height: 10px;
+}
+img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.header{
+  position: relative;
+  top:100px;
+  left: 200px;
+}
+.detail{
+  position: relative;
+  left: 120px;
+  top:-100px;
+  background: rgb(225,255,1);
+  line-height: 5px;
+  width: 350px;
+  height: 70px;
+  border-radius: 35px;
+}
+.in-detail{
+  position: relative;
+  top: 20px;
+  left: 40px;
+}
+.in-detail h1{
+  font-weight: 900;
+}
+.in-detail h5{
+  font-weight: lighter;
+}
+.things{
+  position: relative;
+  top:100px;
+  background:transparent;
+  width: 480px;
+  border-radius: 35px;
+  height: 500px;
+  backdrop-filter: blur(50px);
+  box-shadow: 10px 10px 10px 0.1px rgb(67, 59, 59);
+  
+
+}
+.things h1{
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  font-size: x-large;
+  color: #ddd;
+
+}
+.things .arrow{
+  position: absolute;
+  left:18em;
+  top: -2empx;
+  color: #ddd;
+}
+.div1{
+  background: rgb(210, 214, 211);
+  height: 80px;
+  line-height: 5px;
+  width: 85%;
+  border-radius: 35px;
+  position: relative;
+  top:40px;
+  left: 40px;
+  
+}
+.div1,.div2{
+  transition:  0.5s ease-in-out;
+}
+.div1:hover,.div2:hover{
+  background-color:  #212121;
+  color: #ddd;
+  .arrow1,.arrow2{
+    color: #ddd;
+  }
+}
+.div1 h4 ,.div1 p{
+  position: relative;
+  left: 110px;
+  top: -50px;
+}
+.things .arrow1{
+  position: relative;
+  left: 360px;
+  top:-90px;
+  color: #212121;
+}
+.div1 img{
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 20px;
+  top:15px
+}
+
+.div2{
+  background: rgb(210, 214, 211);
+  height: 80px;
+  line-height: 5px;
+  width: 85%;
+  border-radius: 35px;
+  position: relative;
+  top:45px;
+  left: 40px;
+}
+.div2 h4 ,.div2 p{
+  position: relative;
+  left: 110px;
+  top: 20px;
+}
+
+.div2 img{
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 20px;
+  top:15px
+}
+.things .arrow2{
+  position: relative;
+  left: 360px;
+  top:-22px;
+  color: #212121;
+}
+.div2 .wifi{
+  background: #fff;
+  border-radius: 50%;
+  padding: 10px 10px 10px 10px;
+}
+.things .ai{
+  position: relative;
+  left: 70px;
+  top: 20px;
+}
+.things p{
+  font-weight: lighter;
+}
+#air{
+  position: relative;
+  background:transparent ;
+  width: 450px;
+  height: 350px;
+  left: 600px;
+  top:-570px;
+  border-radius: 10%;
+ backdrop-filter: blur(50px);
+ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+ 
+}
+.air h1,.air p{
+  position: absolute;
+  left: 50px;
+  line-height: 5px;
+  color: #ddd;
+}
+.air p{
+  position: relative;
+  top:-45px;
+}
+.snow{
+  position: relative;
+  top:12px;
+  left: 15px;
+  color: #ddd;
+}
+.toggle-button-cover {
+  display: table-cell;
+  position: relative;
+  width: 200px;
+  height: 140px;
+  box-sizing: border-box;
+}
+
+.button-cover {
+  height: 100px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px -8px #c5d6d6;
+  border-radius: 4px;
+}
+
+.button-cover:before {
+  counter-increment: button-counter;
+  content: counter(button-counter);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #d7e3e3;
+  font-size: 12px;
+  line-height: 1;
+  padding: 5px;
+}
+
+.button-cover,
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  top: 50%;
+  width: 90px;
+  height: 38px;
+  margin: -20px auto 0 auto;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #524949;
+  transition: 1s ease all;
+  z-index: 1;
+}
+
+.button.r,
+.button.r .layer {
+  border-radius: 12px;
+}
+
+#button-3 .knobs:before {
+  content: "ON";
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  width: 23px;
+  height: 11px;
+  color: rgb(22, 21, 21);
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  background-color: rgb(240, 235, 233);
+  border-radius: 30%;
+  transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#button-3 .checkbox:active + .knobs:before {
+  width: 36px;
+  border-radius: 2px;
+}
+
+#button-3 .checkbox:checked:active + .knobs:before {
+  margin-left: -26px;
+}
+
+#button-3 .checkbox:checked + .knobs:before {
+  content: "OFF";
+  left: 50px;
+  background-color: #f44336;
+  color: white;
+}
+
+#button-3 .checkbox:checked ~ .layer {
+  background-color: #524949;
+}
+.toggle-button-cover{
+  position: relative;
+  left: 280px;
+  top:-150px;
+}
+.air .temp{
+  position: relative;
+  top:-110px;
+  left: 180px;
+  font-size: 60px;
+  color: #212121;
+}
+.air .drop{
+  position: relative;
+  left: 70px;
+  font-size: 15px;
+  top:-43px;
+  color: #212121;
+}
+.air .temper{
+  position: relative;
+  top:-130px;
+  left: 170px;
+  color: #212121;
+}
+#air{
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+#showAir:checked + #air{
+  opacity: 0.1;
+}
+.last{
+  position: relative;
+  background:transparent;
+  width: 450px;
+  height: 250px;
+  left: 800px;
+  top:-60px;
+  border-radius: 30px;
+  backdrop-filter: blur(50px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+ 
+}
+.div3{
+  width: 180px;
+  height: 140px;
+  background:floralwhite;
+  position: relative; 
+  left: 30px;
+  top:20px;
+  border-radius: 30px;
+}
+.div4{
+  width: 180px;
+  height: 140px;
+  background:rgb(225,255,1);
+  position: relative; 
+  left: 250px;
+  top:-135px;
+  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.sun,.moon{
+  position: relative;
+  left: 20px;
+  top:10px;
+  font-size: 20px;
+  background: white;
+  width: 10px;
+  padding: 4px 15px 4px 10px;
+  border-radius: 50%;
+}
+.dot{
+  position: relative;
+  left: 150px;
+  top:-70px;
+  color: aliceblue;
+  font-size: xx-large;
+}
+.dev{
+  position: relative;
+  top: -90px;
+  left: 20px;
+}
+.mrng{
+  position: relative;
+  top:-70px;
+  left:15px ;
+}
+.add{
+  position: relative;
+  top:-130px;
+  left: 30px;
+  background: #524949;
+  width: 400px;
+  height: 60px;
+  border-radius: 30px;
+}
+.plus{
+  font-size: 25px;
+  width: 10px;
+  padding: 4px 20px 4px 10px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+.last .eight{
+  font-size: 20px;
+  position: relative;
+  top: -40px;
+  left: 80px;
+
+}
+.last .button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 13px;
+  color: rgb(193, 163, 98);
+  border: 2px solid rgb(193, 163, 98);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.last .button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 100px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: rgb(193, 163, 98);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.last .button:hover::before {
+  scale: 3;
+}
+
+.last .button:hover {
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+
+.last .button:active {
+  scale: 0.1;
+}
+.last .button{
+  position: relative;
+  top: -173px;
+  left: 320px;
+
+}
+
+
